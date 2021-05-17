@@ -1,14 +1,11 @@
 package io.github.jithset.resources;
 
 import io.github.jithset.postman.*;
-import io.smallrye.mutiny.Uni;
 
 import javax.inject.Inject;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import java.util.List;
 
 @Path("/api/country")
 @Produces(MediaType.APPLICATION_JSON)
@@ -18,18 +15,33 @@ public class CountryResource {
     @Inject
     CountryInfoService countryInfoService;
 
-    @Inject
-    CountryInfoServiceSoapType countryInfoServiceSoapType;
-
-
     @GET
-    public Uni<String> get() {
-//        return countryInfoServiceSoapType.listOfCountryNamesByName().getTCountryCodeAndName();
-
-        countryInfoServiceSoapType.listOfCountryNamesByName().getTCountryCodeAndName();
-        String text  = countryInfoService.getCountryInfoServiceSoap().capitalCity("IN");
-        return Uni.createFrom().item(text);
+    @Path("/byname")
+    public List<TCountryCodeAndName> getCountryByName() {
+        return countryInfoService.getCountryInfoServiceSoap().listOfCountryNamesByName().getTCountryCodeAndName();
     }
 
+    @GET
+    @Path("/{countryCode}/capital")
+    public String getCapitalByCountry(@PathParam("countryCode") String countryCode) {
+        return countryInfoService.getCountryInfoServiceSoap().capitalCity(countryCode);
+    }
 
+    @GET
+    @Path("/{countryCode}/currency")
+    public TCurrency getCurrencyByCountry(@PathParam("countryCode") String countryCode) {
+        return countryInfoService.getCountryInfoServiceSoap().countryCurrency(countryCode);
+    }
+
+    @GET
+    @Path("/{countryCode}/flag")
+    public String getFlagByCountry(@PathParam("countryCode") String countryCode) {
+        return countryInfoService.getCountryInfoServiceSoap().countryFlag(countryCode);
+    }
+
+    @GET
+    @Path("/{countryCode}/phone")
+    public List<TContinent> getPhoneByCountry(@PathParam("countryCode") String countryCode) {
+        return countryInfoService.getCountryInfoServiceSoap().countryIntPhoneCode(countryCode);
+    }
 }

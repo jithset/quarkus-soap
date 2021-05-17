@@ -70,7 +70,6 @@
     <orderEntry type="library" name="Maven: io.quarkus:quarkus-ide-launcher:1.13.4.Final" level="project" />
     <orderEntry type="library" name="Maven: io.quarkus:quarkus-development-mode-spi:1.13.4.Final" level="project" />
     <orderEntry type="library" name="Maven: io.smallrye.config:smallrye-config:1.13.0" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.microprofile.config:microprofile-config-api:1.4" level="project" />
     <orderEntry type="library" name="Maven: io.smallrye.common:smallrye-common-expression:1.5.0" level="project" />
     <orderEntry type="library" name="Maven: io.smallrye.common:smallrye-common-function:1.5.0" level="project" />
     <orderEntry type="library" name="Maven: io.smallrye.common:smallrye-common-constraint:1.5.0" level="project" />
@@ -85,14 +84,22 @@
     <orderEntry type="library" name="Maven: org.wildfly.common:wildfly-common:1.5.4.Final-format-001" level="project" />
     <orderEntry type="library" name="Maven: io.quarkus:quarkus-bootstrap-runner:1.13.4.Final" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.microprofile.context-propagation:microprofile-context-propagation-api:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: io.quarkus:quarkus-smallrye-openapi:1.13.4.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.smallrye:smallrye-open-api-core:2.0.26" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.microprofile.openapi:microprofile-openapi-api:1.1.3-RC1" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.microprofile.config:microprofile-config-api:1.4" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.12.3" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.12.3" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.12.3" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.12.3" level="project" />
+    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.28" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss:jandex:2.2.3.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.quarkus:quarkus-swagger-ui:1.13.4.Final" level="project" />
     <orderEntry type="library" name="Maven: io.quarkiverse.cxf:quarkus-cxf:0.7" level="project" />
     <orderEntry type="library" name="Maven: jakarta.servlet:jakarta.servlet-api:4.0.3" level="project" />
     <orderEntry type="library" name="Maven: io.quarkus:quarkus-jaxb:1.13.4.Final" level="project" />
     <orderEntry type="library" name="Maven: io.quarkus:quarkus-jaxp:1.13.4.Final" level="project" />
     <orderEntry type="library" name="Maven: io.quarkus:quarkus-jackson:1.13.4.Final" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.12.3" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.12.3" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.12.3" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.12.3" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.12.3" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.12.3" level="project" />
@@ -181,7 +188,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: io.quarkus:quarkus-devtools-utilities:1.13.4.Final" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.quarkus:quarkus-builder:1.13.4.Final" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.quarkus:quarkus-jsonp-deployment:1.13.4.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.jboss:jandex:2.2.3.Final" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter:5.7.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-api:5.7.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.apiguardian:apiguardian-api:1.1.0" level="project" />

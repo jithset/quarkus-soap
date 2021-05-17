@@ -8,6 +8,7 @@ import javax.jws.WebService;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.ws.RequestWrapper;
 import javax.xml.ws.ResponseWrapper;
+import java.util.List;
 
 
 /**
@@ -208,7 +209,7 @@ public interface CountryInfoServiceSoapType {
     @WebResult(name = "CountryIntPhoneCodeResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
     @RequestWrapper(localName = "CountryIntPhoneCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "org.oorsprong.websamples.CountryIntPhoneCode")
     @ResponseWrapper(localName = "CountryIntPhoneCodeResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "org.oorsprong.websamples.CountryIntPhoneCodeResponse")
-    public String countryIntPhoneCode(
+    public List<TContinent> countryIntPhoneCode(
         @WebParam(name = "sCountryISOCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
         String sCountryISOCode);
 
